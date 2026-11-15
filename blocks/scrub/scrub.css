@@ -1,0 +1,5 @@
+/* Блок scrub — цитата, слова которой «проявляются» при прокрутке. */
+.scrub{font-family:var(--f-cond);font-weight:700;text-transform:uppercase;font-size:clamp(2rem,4.6vw,4rem);line-height:.98;margin:0;}
+.scrub__word{color:#bdb9b0;transition:color .25s;}
+.scrub__word--active{color:var(--ink);}
+.scrub__word--accent.scrub__word--active{color:var(--orange);}

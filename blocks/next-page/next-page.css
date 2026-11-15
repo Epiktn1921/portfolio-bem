@@ -1,0 +1,7 @@
+/* Блок next-page — большая ссылка на следующий раздел внизу страницы. */
+.next-page{display:flex;justify-content:space-between;align-items:center;gap:16px;text-decoration:none;color:inherit;padding-block:clamp(26px,4vw,44px);border-top:2px solid currentColor;margin-top:clamp(40px,6vw,72px);}
+.next-page__label{opacity:.7;}
+.next-page__title{display:block;font-family:var(--f-display);font-weight:900;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.04em;line-height:1;margin-top:6px;transition:transform .35s cubic-bezier(.2,.9,.3,1.2),color .35s;}
+.next-page:hover .next-page__title{transform:translateX(14px);color:var(--orange);}
+.next-page__arrow{width:clamp(46px,5vw,64px);aspect-ratio:1;border-radius:50%;border:2px solid currentColor;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:20px;flex-shrink:0;transition:transform .35s,background .35s,color .35s,border-color .35s;}
+.next-page:hover .next-page__arrow{transform:rotate(-45deg);background:var(--orange);border-color:var(--orange);color:var(--ink);}

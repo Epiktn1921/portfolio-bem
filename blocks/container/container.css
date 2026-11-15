@@ -1,0 +1,2 @@
+/* Блок container — ограничивает ширину контента и задаёт боковые отступы. */
+.container{max-width:var(--maxw);margin:0 auto;padding-left:var(--gl);padding-right:var(--gr);}

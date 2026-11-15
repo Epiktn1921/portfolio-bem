@@ -1,0 +1,6 @@
+/* Блок footer — подвал сайта. */
+.footer{background:var(--ink);color:var(--paper);border-top:1px solid var(--line-d);}
+.footer__inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-block:16px calc(18px + env(safe-area-inset-bottom,0px));font-size:13px;font-weight:600;}
+.footer__links{display:flex;gap:16px;flex-wrap:wrap;}
+.footer__link{text-decoration:none;color:inherit;}
+.footer__link:hover{color:var(--orange);}

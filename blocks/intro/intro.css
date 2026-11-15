@@ -1,0 +1,8 @@
+/* Блок intro — второй экран главной: приветствие, скетч, кнопки, цифры. */
+.intro{padding-block:clamp(56px,8vw,110px) clamp(40px,6vw,80px);}
+.intro__grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start;}
+.intro__side{display:flex;flex-direction:column;gap:22px;}
+.intro__copy{font-size:16px;max-width:42ch;margin:0;}
+.intro__actions{display:flex;gap:10px;flex-wrap:wrap;}
+.intro__stats{margin-top:clamp(40px,6vw,80px);}
+@media (max-width:900px){ .intro__grid{grid-template-columns:1fr;} }

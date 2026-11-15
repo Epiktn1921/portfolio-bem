@@ -1,0 +1,6 @@
+/* Блок socials — ссылки на соцсети. */
+.socials{display:flex;gap:8px;flex-wrap:wrap;}
+.socials__link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:6px 13px 6px 6px;font-weight:700;font-size:14px;background:var(--ink);color:var(--paper);transition:transform .15s,background .15s,color .15s;}
+.socials__link:hover{transform:translateY(-2px);background:var(--paper);color:var(--ink);}
+.socials__icon{width:24px;height:24px;border-radius:50%;background:var(--orange);display:grid;place-items:center;color:var(--ink);}
+.socials__svg{width:13px;height:13px;fill:currentColor;}

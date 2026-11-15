@@ -1,0 +1,3 @@
+/* Блок round-button — круглая кнопка со стрелкой или крестиком. */
+.round-button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--paper);background:transparent;color:var(--paper);cursor:pointer;font-size:18px;line-height:1;display:grid;place-items:center;transition:background .15s,color .15s,border-color .15s;}
+.round-button:hover{background:var(--orange);border-color:var(--orange);color:var(--ink);}

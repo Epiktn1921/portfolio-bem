@@ -1,0 +1,6 @@
+/* Блок sketch — повёрнутая карточка с картинкой. */
+.sketch{position:relative;margin:0;border:2px solid var(--ink);border-radius:14px;overflow:hidden;background:#fff;transform:rotate(2.5deg);box-shadow:6px 6px 0 var(--ink);transition:transform .4s cubic-bezier(.2,.8,.2,1);max-width:420px;}
+.sketch:hover{transform:rotate(-1deg) scale(1.02);}
+.sketch__image{display:block;width:100%;height:auto;}
+.sketch__label{position:absolute;left:12px;bottom:12px;}
+@media (max-width:900px){ .sketch{max-width:380px;} }

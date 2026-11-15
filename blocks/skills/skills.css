@@ -1,0 +1,2 @@
+/* Блок skills — строка навыков. */
+.skills{display:flex;gap:10px 28px;flex-wrap:wrap;align-items:center;margin-top:clamp(28px,4vw,44px);}

@@ -1,0 +1,4 @@
+/* Блок page — тело страницы. Модификатор page--dark — тёмная страница (Код, Монтаж). */
+.page{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;overflow-x:hidden;}
+.page::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink);}
+.page--dark{background:var(--ink);color:var(--paper);}

@@ -1,0 +1,3 @@
+/* Блок smiley — круглый смайлик. */
+.smiley{width:clamp(44px,4.6vw,58px);aspect-ratio:1;border-radius:50%;background:var(--paper);border:1.5px solid var(--ink);display:grid;place-items:center;box-shadow:2px 2px 0 var(--ink);}
+.smiley__icon{width:62%;height:62%;}

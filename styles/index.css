@@ -1,0 +1,55 @@
+/* Главный файл стилей: подключает общие настройки и все блоки.
+   Файловая структура по БЭМ: каждый блок лежит в своей папке blocks/<имя-блока>/<имя-блока>.css */
+
+@import url(globals.css);
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/container/container.css);
+@import url(../blocks/label/label.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/nav/nav.css);
+@import url(../blocks/hero/hero.css);
+@import url(../blocks/sticker/sticker.css);
+@import url(../blocks/pill/pill.css);
+@import url(../blocks/badge/badge.css);
+@import url(../blocks/smiley/smiley.css);
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/eyebrow/eyebrow.css);
+@import url(../blocks/scrub/scrub.css);
+@import url(../blocks/sketch/sketch.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/stats/stats.css);
+@import url(../blocks/marquee/marquee.css);
+@import url(../blocks/section-head/section-head.css);
+@import url(../blocks/doors/doors.css);
+@import url(../blocks/featured/featured.css);
+@import url(../blocks/process/process.css);
+@import url(../blocks/door/door.css);
+@import url(../blocks/chips/chips.css);
+@import url(../blocks/chip/chip.css);
+@import url(../blocks/page-head/page-head.css);
+@import url(../blocks/greeting/greeting.css);
+@import url(../blocks/cases/cases.css);
+@import url(../blocks/case/case.css);
+@import url(../blocks/skills/skills.css);
+@import url(../blocks/next-page/next-page.css);
+@import url(../blocks/fan/fan.css);
+@import url(../blocks/deck/deck.css);
+@import url(../blocks/round-button/round-button.css);
+@import url(../blocks/filters/filters.css);
+@import url(../blocks/works/works.css);
+@import url(../blocks/work/work.css);
+@import url(../blocks/section-bar/section-bar.css);
+@import url(../blocks/big-works/big-works.css);
+@import url(../blocks/big-work/big-work.css);
+@import url(../blocks/tg-icon/tg-icon.css);
+@import url(../blocks/reels/reels.css);
+@import url(../blocks/reel/reel.css);
+@import url(../blocks/contact/contact.css);
+@import url(../blocks/socials/socials.css);
+@import url(../blocks/magnet/magnet.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/lightbox/lightbox.css);
+@import url(../blocks/toast/toast.css);
+@import url(../blocks/cursor-label/cursor-label.css);
+@import url(../blocks/reveal/reveal.css);

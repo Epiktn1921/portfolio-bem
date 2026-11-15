@@ -1,0 +1,4 @@
+/* Блок button — кнопка-ссылка. Модификатор button--solid — залитая. */
+.button{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;border:1.5px solid var(--ink);color:var(--ink);background:transparent;transition:transform .15s,box-shadow .15s;}
+.button:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--orange);}
+.button--solid{background:var(--ink);color:var(--paper);}

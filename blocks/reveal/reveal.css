@@ -1,0 +1,4 @@
+/* Блок reveal — подмешивается к другим блокам (миксин), чтобы они плавно появлялись при прокрутке.
+   Модификатор reveal--hidden ставит скрипт, пока элемент ниже экрана. */
+.reveal{transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .9s;}
+.reveal--hidden{opacity:0;transform:translateY(40px);}

@@ -1,0 +1,3 @@
+/* Блок cursor-label — подпись, которая едет за курсором. Модификатор cursor-label--visible — показана. */
+.cursor-label{position:fixed;left:0;top:0;z-index:90;pointer-events:none;padding:6px 12px;border-radius:999px;background:var(--yellow);color:var(--ink);border:1.5px solid var(--ink);font-weight:700;font-size:12px;white-space:nowrap;transform:translate(-50%,-50%) scale(0);transition:transform .2s cubic-bezier(.2,.9,.3,1.4);}
+.cursor-label--visible{transform:translate(-50%,-50%) scale(1);}

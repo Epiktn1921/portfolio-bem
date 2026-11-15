@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Дизайн — Таня Эпик</title>
+  <meta name="description" content="Каталог дизайн-работ Тани Эпик: постеры, полиграфия, логотипы, презентации.">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Oswald:wght@500;700&family=Pixelify+Sans:wght@500;700&display=swap">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="page">
+
+<!-- SVG-спрайт: иконки, которые используются на странице через <use href="#..."> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="star20" viewBox="0 0 100 100"><path d="M50,0 L53.44,28.27 L65.45,2.45 L59.99,30.4 L79.39,9.55 L65.56,34.44 L90.45,20.61 L69.6,40.01 L97.55,34.55 L71.73,46.56 L100,50 L71.73,53.44 L97.55,65.45 L69.6,59.99 L90.45,79.39 L65.56,65.56 L79.39,90.45 L59.99,69.6 L65.45,97.55 L53.44,71.73 L50,100 L46.56,71.73 L34.55,97.55 L40.01,69.6 L20.61,90.45 L34.44,65.56 L9.55,79.39 L30.4,59.99 L2.45,65.45 L28.27,53.44 L0,50 L28.27,46.56 L2.45,34.55 L30.4,40.01 L9.55,20.61 L34.44,34.44 L20.61,9.55 L40.01,30.4 L34.55,2.45 L46.56,28.27 Z"/></symbol>
+  <symbol id="smile" viewBox="0 0 40 40"><g fill="none" stroke="#0e0e0e" stroke-width="3.4" stroke-linecap="round"><path d="M12 16 v3"/><path d="M28 16 v3"/><path d="M10 25 q10 9 20 0"/></g></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="plane" viewBox="0 0 24 24"><path d="M21.5 3.5 2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.7 4.8 3.5c.8.6 1.9.1 2.1-.9l3-15.1c.2-1.1-.9-2-1.9-1.5Z"/></symbol>
+</svg>
+
+<!-- Блок header, внутри — блок nav (смешан с элементом header__nav) -->
+<header class="header" id="top">
+  <div class="header__inner">
+    <a class="header__logo" href="index.html" aria-label="Таня Эпик — на главную">TE<span class="header__logo-dot">.</span></a>
+    <nav class="header__nav nav" aria-label="Разделы сайта">
+      <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="code.html">Код</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--active" href="design.html" aria-current="page">Дизайн</a></li>
+          <li class="nav__item"><a class="nav__link" href="editing.html">Монтаж</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header__cta" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer">Напиши мне</a>
+  </div>
+  <div class="header__progress" id="progress"></div>
+</header>
+
+<main>
+  <div class="container">
+    <!-- Блок page-head — шапка раздела -->
+    <div class="page-head">
+      <div class="page-head__crumbs"><a class="page-head__back" href="index.html">← Главная</a><span class="label">Раздел 2 из 3</span></div>
+      <h1 class="page-head__title">Каталог <span class="page-head__accent">работ</span></h1>
+      <div class="page-head__lead">
+        <p class="page-head__text">Постеры, афиши, меню, логотипы, обложки и презентация. Нажми на любую работу, чтобы открыть её крупно, и листай стрелками.</p>
+        <div class="page-head__stickers"><span class="page-head__sticker pill pill--blue">постеры</span><span class="page-head__sticker pill pill--pink">лого</span><span class="page-head__sticker pill pill--green">слайды</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Блок fan — веер избранных работ (карточки добавляет скрипт) -->
+  <div class="fan" id="fan" aria-label="Избранные работы">
+    <div class="fan__word" aria-hidden="true"><span>ДИЗ</span><span class="fan__word-accent">АЙН</span></div>
+  </div>
+
+  <div class="container">
+    <!-- Блок deck — слайдер презентации (слайды и миниатюры добавляет скрипт) -->
+    <section class="deck reveal" aria-labelledby="deck-title">
+      <div class="deck__stage" id="deckStage" data-cursor="открыть крупно" role="region" aria-roledescription="слайдер" aria-label="Слайды презентации">
+        <div class="deck__bars" id="deckBars"></div>
+        <div class="deck__nav"><button class="deck__button round-button" type="button" id="deckPrev" aria-label="Предыдущий слайд">←</button><button class="deck__button round-button" type="button" id="deckNext" aria-label="Следующий слайд">→</button></div>
+      </div>
+      <div class="deck__side">
+        <span class="deck__pill pill pill--green">презентация · 10 слайдов</span>
+        <h3 class="deck__title" id="deck-title">Кто владеет результатом?</h3>
+        <p class="deck__text">Презентация про авторское право и нейросети: изображения, тексты, открытый код, обучение на чужих данных и будущее регулирования.</p>
+        <div class="deck__counter"><span class="deck__count" id="deckCount">01/10</span><span class="label" id="deckCaption"></span></div>
+        <div class="deck__thumbs" id="deckThumbs"></div>
+        <a class="button" href="https://epiktn1921.github.io/AIORPEOPLE/" target="_blank" rel="noopener noreferrer" style="align-self:flex-start">Сайт-версия презентации ↗</a>
+      </div>
+    </section>
+
+    <!-- Блок filters (кнопки добавляет скрипт) и блок works — галерея -->
+    <div class="filters" role="group" aria-label="Фильтр работ" id="filters"></div>
+    <div class="works" id="works">
+      <figure class="work" data-cat="deck"><button class="work__button" type="button" data-cursor="листать слайды" data-deck="1"><img class="work__image" src="images/works/work-01.jpg" alt="Титульный слайд «Кто владеет результатом?» на фоне размытой листвы" loading="lazy" decoding="async"><span class="work__badge pill pill--green">10 слайдов</span></button><figcaption class="work__caption"><strong class="work__title">Кто владеет результатом?</strong><span class="work__type">Презентация, 10 слайдов</span></figcaption></figure>
+      <figure class="work" data-cat="cover"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-02.jpg" alt="Обложка «Сияй» Vladislava: девушка в белой одежде сидит на траве ночью" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Vladislava — «Сияй»</strong><span class="work__type">Обложка</span></figcaption></figure>
+      <figure class="work" data-cat="print"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-03.jpg" alt="Афиша «Ликование» с логотипом из человечков вокруг креста на фоне цветов" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Ликование</strong><span class="work__type">Афиша</span></figcaption></figure>
+      <figure class="work" data-cat="logo"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-04.jpg" alt="Логотип «Аутрич ЮС 2026»: светлая звезда на оранжевом фоне" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Аутрич ЮС 2026</strong><span class="work__type">Логотип</span></figcaption></figure>
+      <figure class="work" data-cat="cover"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-05.jpg" alt="Иллюстрация: персонаж в шапке рисует на листе, сидя на фоне остановки и поля" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Пост для Instagram</strong><span class="work__type">Иллюстрация</span></figcaption></figure>
+      <figure class="work" data-cat="print"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-06.jpg" alt="Оранжевый задник «57 идей» формата А3 с растровыми фигурами и цитатой" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">57 идей</strong><span class="work__type">Задник, формат А3</span></figcaption></figure>
+      <figure class="work" data-cat="print"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-07.jpg" alt="Красный пригласительный билет на «Вечер хвалы» с чёрно-белым фото концерта" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Вечер хвалы</strong><span class="work__type">Пригласительный билет</span></figcaption></figure>
+      <figure class="work" data-cat="print"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-08.jpg" alt="Красно-белая листовка «Куплю дом» с QR-кодом и номером телефона" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Куплю дом</strong><span class="work__type">Листовка</span></figcaption></figure>
+      <figure class="work" data-cat="poster"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-09.jpg" alt="Постер Happy Birthday пати: детское фото в праздничном колпаке между цифрами 2 и 0 на клетчатом фоне" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Happy Birthday пати</strong><span class="work__type">Постер-приглашение</span></figcaption></figure>
+      <figure class="work" data-cat="print"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-10.jpg" alt="Синее новогоднее меню кафе «Вэлк’ом» с салатами, тарелками, канапе и брускеттами" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Новогоднее меню «Вэлк’ом»</strong><span class="work__type">Меню</span></figcaption></figure>
+      <figure class="work" data-cat="poster"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-11.jpg" alt="Постер с портретом в кепке, розовой надписью и яркими наклейками" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">This my EPIK channel</strong><span class="work__type">Постер</span></figcaption></figure>
+      <figure class="work" data-cat="poster"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-12.jpg" alt="Синий постер Think Less с красной вспышкой и иероглифами" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Think Less</strong><span class="work__type">Постер</span></figcaption></figure>
+      <figure class="work" data-cat="poster"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-13.jpg" alt="Красный постер «Альфа-курс» с вопросительным знаком и QR-кодом" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Альфа-курс</strong><span class="work__type">Постер</span></figcaption></figure>
+      <figure class="work" data-cat="poster"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-14.jpg" alt="Постер Go Way: вид сверху на человека в красной кепке на мостовой" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Go Way</strong><span class="work__type">Постер</span></figcaption></figure>
+      <figure class="work" data-cat="poster"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-15.jpg" alt="Чёрно-белый постер с храмом, проводами и граффити-надписью «Москва»" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Москва</strong><span class="work__type">Постер</span></figcaption></figure>
+      <figure class="work" data-cat="digital"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-16.jpg" alt="Обои Street Art Live с танцором и крупной типографикой" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Street Art Live</strong><span class="work__type">Обои на ПК</span></figcaption></figure>
+      <figure class="work" data-cat="digital"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-17.jpg" alt="Обои с силуэтом церкви на туманном поле и цитатой Иоанна 15:5" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">John 15:5</strong><span class="work__type">Обои</span></figcaption></figure>
+      <figure class="work" data-cat="logo"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-18.jpg" alt="Логотип EPIK: белые буквы и рисованный рот на бордовом круге" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">EPIK</strong><span class="work__type">Логотип</span></figcaption></figure>
+      <figure class="work" data-cat="deck"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-19.jpg" alt="Слайд презентации Dom Youth с красной панелью и фото на Эльбрусе" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Алексей Романов</strong><span class="work__type">Слайд презентации</span></figcaption></figure>
+      <figure class="work" data-cat="merch"><button class="work__button" type="button" data-cursor="смотреть"><img class="work__image" src="images/works/work-20.jpg" alt="Принт Vintage: детское фото на тёмном фоне с красной каллиграфической надписью" loading="lazy" decoding="async"></button><figcaption class="work__caption"><strong class="work__title">Vintage</strong><span class="work__type">Принт на кофту</span></figcaption></figure>
+    </div>
+
+    <a class="next-page" href="editing.html"><span><span class="next-page__label label">Следующий раздел</span><b class="next-page__title">Монтаж</b></span><span class="next-page__arrow" aria-hidden="true">→</span></a>
+  </div>
+
+<!-- Блок contact (одинаковый на всех страницах) -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact__inner container">
+    <div>
+      <p class="eyebrow label">Контакты</p>
+      <h2 class="contact__title" id="contact-title">Есть проект? <span class="contact__accent">Давай обсудим.</span></h2>
+      <div class="contact__mail-row">
+        <a class="contact__mail" href="mailto:tanja.epowa@yandex.ru" id="mail">tanja.epowa@yandex.ru</a>
+        <button class="contact__copy" type="button" id="copyButton">Скопировать почту</button>
+      </div>
+      <div class="contact__socials socials">
+        <a class="socials__link" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer"><span class="socials__icon"><svg class="socials__svg" aria-hidden="true"><use href="#plane"/></svg></span>Telegram: @TanyaEpik</a>
+        <a class="socials__link" href="https://t.me/tatiankaepik" target="_blank" rel="noopener noreferrer"><span class="socials__icon"><svg class="socials__svg" aria-hidden="true"><use href="#plane"/></svg></span>Канал: @tatiankaepik</a>
+        <a class="socials__link" href="https://www.instagram.com/tanya.epova/" target="_blank" rel="noopener noreferrer"><span class="socials__icon"><svg class="socials__svg" aria-hidden="true"><use href="#ig"/></svg></span>Instagram: @tanya.epova</a>
+      </div>
+    </div>
+    <a class="contact__magnet magnet" id="magnet" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer" data-cursor="Telegram ↗">Напиши<br>в TG ↗</a>
+  </div>
+</section>
+</main>
+
+<!-- Блок footer -->
+<footer class="footer">
+  <div class="footer__inner container">
+    <span>Таня Эпик — creative developer</span>
+    <span class="footer__links">
+      <a class="footer__link" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a class="footer__link" href="https://t.me/tatiankaepik" target="_blank" rel="noopener noreferrer">Канал</a>
+      <a class="footer__link" href="https://www.instagram.com/tanya.epova/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a class="footer__link" href="#top">Наверх ↑</a>
+    </span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<!-- Блок lightbox — просмотр работы крупно -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр работы" hidden>
+  <div class="lightbox__top"><span class="label" id="lightboxCount">01 / 01</span><button class="round-button" type="button" id="lightboxClose" aria-label="Закрыть">✕</button></div>
+  <div class="lightbox__stage" id="lightboxStage"><img class="lightbox__image" id="lightboxImage" alt=""></div>
+  <div class="lightbox__bottom">
+    <div><strong class="lightbox__title" id="lightboxTitle"></strong><span class="lightbox__type label" id="lightboxType"></span></div>
+    <div class="lightbox__nav"><button class="round-button" type="button" id="lightboxPrev" aria-label="Назад">←</button><button class="round-button" type="button" id="lightboxNext" aria-label="Вперёд">→</button></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cursor-label" id="cursorLabel" aria-hidden="true"></div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

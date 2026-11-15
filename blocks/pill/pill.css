@@ -1,0 +1,8 @@
+/* Блок pill — цветная плашка-«таблетка». Модификаторы задают цвет. */
+.pill{display:inline-block;padding:5px 13px;border-radius:999px;border:1.5px solid var(--ink);font-weight:700;font-size:clamp(12px,1vw,14px);line-height:1.4;color:var(--ink);background:var(--paper);white-space:nowrap;box-shadow:2px 2px 0 var(--ink);}
+.pill--green{background:var(--green);color:var(--paper);}
+.pill--orange{background:var(--orange);}
+.pill--yellow{background:var(--yellow);}
+.pill--pink{background:var(--pink);}
+.pill--blue{background:var(--blue);color:var(--paper);}
+.pill--white{background:var(--paper);}

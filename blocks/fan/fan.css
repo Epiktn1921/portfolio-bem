@@ -1,0 +1,8 @@
+/* Блок fan — «веер» избранных работ. Модификатор fan--open — веер раскрыт. */
+.fan{position:relative;height:clamp(250px,30vw,420px);margin:0 0 clamp(24px,3vw,40px);overflow:hidden;}
+.fan__word{position:absolute;left:0;right:0;top:4%;display:flex;justify-content:center;font-family:var(--f-pixel);font-weight:700;font-size:clamp(3.6rem,15vw,13rem);line-height:1;letter-spacing:-.02em;white-space:nowrap;pointer-events:none;}
+.fan__word-accent{font-family:var(--f-display);font-weight:900;color:var(--orange);}
+.fan__card{position:absolute;left:50%;top:36%;width:clamp(80px,11.5vw,168px);padding:0;border:2px solid var(--ink);border-radius:8px;overflow:hidden;background:var(--paper);cursor:pointer;line-height:0;box-shadow:3px 5px 0 rgba(14,14,14,.85);transform:translateX(-50%) translateX(var(--x0,0px)) rotate(var(--r0,0deg));transition:transform .9s cubic-bezier(.2,.9,.2,1);transition-delay:calc(var(--i) * 60ms);}
+.fan--open .fan__card{transform:translateX(-50%) translateX(var(--x)) translateY(var(--y)) rotate(var(--r));}
+.fan--open .fan__card:hover{transform:translateX(-50%) translateX(var(--x)) translateY(calc(var(--y) - 30px)) rotate(0deg) scale(1.1);z-index:5;transition-delay:0s;transition-duration:.35s;}
+.fan__image{width:100%;height:auto;display:block;aspect-ratio:3/4;object-fit:cover;}

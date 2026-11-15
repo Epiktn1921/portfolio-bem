@@ -1,0 +1,6 @@
+/* Блок filters — кнопки фильтра галереи. Модификатор filters__button--active — выбранная категория. */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px;}
+.filters__button{border:1.5px solid var(--ink);border-radius:999px;padding:6px 13px;background:transparent;color:var(--ink);font-weight:600;font-size:14px;cursor:pointer;display:inline-flex;gap:7px;align-items:center;transition:background .2s,color .2s,transform .15s;}
+.filters__button:hover{transform:translateY(-2px);}
+.filters__button--active{background:var(--ink);color:var(--paper);}
+.filters__count{font-family:var(--f-mono);font-size:10px;opacity:.6;}

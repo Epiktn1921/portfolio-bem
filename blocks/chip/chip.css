@@ -1,0 +1,6 @@
+/* Блок chip — метка со звёздочкой. Модификаторы chip--blue / chip--ink меняют цвет звёздочки. */
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;border:1.5px solid currentColor;font-weight:600;font-size:13px;transition:transform .2s cubic-bezier(.3,1.6,.5,1);}
+.chip:hover{transform:rotate(-4deg) scale(1.06);}
+.chip__icon{width:10px;height:10px;fill:var(--orange);}
+.chip--blue .chip__icon{fill:var(--blue);}
+.chip--ink .chip__icon{fill:var(--ink);}

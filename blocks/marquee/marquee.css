@@ -1,0 +1,8 @@
+/* Блок marquee — две скрещенные бегущие ленты. Модификатор marquee__band--dark — тёмная лента. */
+.marquee{position:relative;height:clamp(120px,14vw,180px);overflow:hidden;}
+.marquee__band{position:absolute;left:-5%;width:110%;top:50%;border-block:2px solid var(--ink);overflow:hidden;display:flex;background:var(--orange);transform:translateY(-50%) rotate(-3deg);z-index:2;}
+.marquee__band--dark{background:var(--ink);color:var(--paper);transform:translateY(-50%) rotate(2.5deg);z-index:1;}
+.marquee__track{display:flex;flex-shrink:0;align-items:center;gap:26px;padding:10px 26px 10px 0;white-space:nowrap;font-family:var(--f-display);font-weight:900;font-size:clamp(1.1rem,2.4vw,2rem);letter-spacing:-.02em;animation:marquee-run 26s linear infinite;}
+.marquee__band--dark .marquee__track{animation-direction:reverse;font-family:var(--f-pixel);font-weight:700;}
+.marquee__icon{width:.85em;height:.85em;fill:currentColor;flex-shrink:0;}
+@keyframes marquee-run{to{transform:translateX(-100%);}}

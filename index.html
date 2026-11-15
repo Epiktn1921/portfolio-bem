@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Таня Эпик — портфолио</title>
+  <meta name="description" content="Портфолио Тани Эпик: веб-разработка, дизайн и видеомонтаж.">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Oswald:wght@500;700&family=Pixelify+Sans:wght@500;700&display=swap">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="page">
+
+<!-- SVG-спрайт: иконки, которые используются на странице через <use href="#..."> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="star20" viewBox="0 0 100 100"><path d="M50,0 L53.44,28.27 L65.45,2.45 L59.99,30.4 L79.39,9.55 L65.56,34.44 L90.45,20.61 L69.6,40.01 L97.55,34.55 L71.73,46.56 L100,50 L71.73,53.44 L97.55,65.45 L69.6,59.99 L90.45,79.39 L65.56,65.56 L79.39,90.45 L59.99,69.6 L65.45,97.55 L53.44,71.73 L50,100 L46.56,71.73 L34.55,97.55 L40.01,69.6 L20.61,90.45 L34.44,65.56 L9.55,79.39 L30.4,59.99 L2.45,65.45 L28.27,53.44 L0,50 L28.27,46.56 L2.45,34.55 L30.4,40.01 L9.55,20.61 L34.44,34.44 L20.61,9.55 L40.01,30.4 L34.55,2.45 L46.56,28.27 Z"/></symbol>
+  <symbol id="smile" viewBox="0 0 40 40"><g fill="none" stroke="#0e0e0e" stroke-width="3.4" stroke-linecap="round"><path d="M12 16 v3"/><path d="M28 16 v3"/><path d="M10 25 q10 9 20 0"/></g></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="plane" viewBox="0 0 24 24"><path d="M21.5 3.5 2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.7 4.8 3.5c.8.6 1.9.1 2.1-.9l3-15.1c.2-1.1-.9-2-1.9-1.5Z"/></symbol>
+</svg>
+
+<!-- Блок header, внутри — блок nav (смешан с элементом header__nav) -->
+<header class="header" id="top">
+  <div class="header__inner">
+    <a class="header__logo" href="index.html" aria-label="Таня Эпик — на главную">TE<span class="header__logo-dot">.</span></a>
+    <nav class="header__nav nav" aria-label="Разделы сайта">
+      <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="code.html">Код</a></li>
+          <li class="nav__item"><a class="nav__link" href="design.html">Дизайн</a></li>
+          <li class="nav__item"><a class="nav__link" href="editing.html">Монтаж</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header__cta" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer">Напиши мне</a>
+  </div>
+  <div class="header__progress" id="progress"></div>
+</header>
+
+<main>
+  <!-- ЭКРАН 1. Блок hero -->
+  <section class="hero" aria-label="Таня Эпик">
+    <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg" aria-hidden="true" tabindex="-1" disablepictureinpicture>
+      <source src="video/hero.mp4" type="video/mp4">
+      <source src="video/hero.webm" type="video/webm">
+    </video>
+    <div class="hero__shade"></div>
+    <div class="hero__grain"></div>
+    <svg class="hero__squiggles" id="squiggles" preserveAspectRatio="none" viewBox="0 0 1000 600" aria-hidden="true"></svg>
+    <div class="hero__top"><span class="label">Portfolio ✺ 2026</span><span class="label">Web · Дизайн · Монтаж</span></div>
+    <div class="hero__main">
+      <h1 class="hero__title" aria-label="Таня Эпик">
+        <span class="hero__row" data-word="ТАНЯ" data-fonts="display,display,pixel,display" data-hot="2" aria-hidden="true"></span>
+        <span class="hero__row" data-word="ЭПИК" data-fonts="pixel,display,pixel,cond" data-hot="3" aria-hidden="true"></span>
+      </h1>
+      <div class="hero__links"><a class="hero__link" href="code.html">Web-разработка</a><a class="hero__link" href="design.html">Дизайн</a><a class="hero__link" href="editing.html">Видеомонтаж</a></div>
+      <p class="hero__hint label">↳ наведи на буквы · стикеры можно таскать</p>
+    </div>
+    <div class="hero__sticker sticker" style="--x:64%;--y:16%;--r:-8deg" data-depth="18"><span class="sticker__inner"><span class="pill pill--green">web-разработка</span></span></div>
+    <div class="hero__sticker sticker" style="--x:8%;--y:20%;--r:6deg;--d:-1s" data-depth="-14"><span class="sticker__inner"><span class="pill pill--yellow">дизайн</span></span></div>
+    <div class="hero__sticker sticker" style="--x:76%;--y:60%;--r:10deg;--d:-2s" data-depth="24"><span class="sticker__inner"><span class="pill pill--pink">рилсы</span></span></div>
+    <div class="hero__sticker sticker" style="--x:40%;--y:13%;--r:-4deg;--d:-.5s" data-depth="-20"><span class="sticker__inner"><span class="pill pill--orange">NEW 2026</span></span></div>
+    <div class="hero__sticker sticker" style="--x:86%;--y:28%;--d:-1.5s" data-depth="30"><span class="sticker__inner"><span class="badge"><svg class="badge__star" aria-hidden="true"><use href="#star20"/></svg><b class="badge__text">с 2020<br>года</b></span></span></div>
+    <div class="hero__sticker sticker" style="--x:28%;--y:66%;--r:-12deg;--d:-3s" data-depth="-26"><span class="sticker__inner"><span class="smiley"><svg class="smiley__icon" aria-hidden="true"><use href="#smile"/></svg></span></span></div>
+    <div class="hero__sticker sticker" style="--x:56%;--y:72%;--r:5deg;--d:-2.4s" data-depth="12"><span class="sticker__inner"><span class="pill pill--blue">@tanya.epova</span></span></div>
+    <div class="hero__strip"><div class="hero__strip-inner"><span class="hero__brand">TANYA<i class="hero__brand-accent">epik</i></span><span class="hero__meta label">® Creative developer ✺ Catalogue of works</span><span class="hero__barcode" aria-hidden="true"><i class="hero__barcode-lines"></i><span class="hero__barcode-text">TE-2020-2026</span></span></div></div>
+  </section>
+
+  <!-- ЭКРАН 2. Блок intro (смешан с container) -->
+  <section class="intro container" aria-labelledby="intro-title">
+    <div class="intro__grid">
+      <div>
+        <p class="eyebrow label">Привет, я Таня</p>
+        <h2 class="scrub" id="intro-title">Создаю современные <span class="scrub__accent">веб-интерфейсы,</span> дизайн и <span class="scrub__accent">рилсы,</span> которые удерживают внимание. От первого макета до релиза и промо-видео.</h2>
+      </div>
+      <div class="intro__side reveal">
+        <figure class="sketch" data-cursor="это я за работой">
+          <img class="sketch__image" src="images/sketch.jpg" width="1100" height="839" loading="lazy" decoding="async" alt="Скетч рабочего места: монитор с макетом, ноутбук и доска с референсами">
+          <span class="sketch__label pill pill--white">рабочее место</span>
+        </figure>
+        <p class="intro__copy">Меня зовут Таня Эпик. Я делаю сайты, графический дизайн и видео. Один человек ведёт проект от структуры экранов до кода и рилса, поэтому всё звучит в одном стиле.</p>
+        <div class="intro__actions"><a class="button button--solid" href="#contact">Обсудить проект</a><a class="button" href="#what">Что я делаю ↓</a></div>
+      </div>
+    </div>
+    <div class="intro__stats stats reveal">
+      <div class="stats__item"><b class="stats__number" data-count="2020">2020</b><span class="stats__text">год, когда я начала</span></div>
+      <div class="stats__item"><b class="stats__number" data-count="5">5</b><span class="stats__text">живых сайтов в кейсах</span></div>
+      <div class="stats__item"><b class="stats__number" data-count="20">20</b><span class="stats__text">работ в каталоге дизайна</span></div>
+      <div class="stats__item"><b class="stats__number" data-count="3">3</b><span class="stats__text">аккаунта, для которых монтирую рилсы</span></div>
+    </div>
+  </section>
+
+  <!-- Блок marquee — бегущие ленты -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__band"><div class="marquee__track"><span>ВЕБ-РАЗРАБОТКА</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ДИЗАЙН</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>МОНТАЖ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ПОСТЕРЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>РИЛСЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ЛОГОТИПЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg></div><div class="marquee__track" aria-hidden="true"><span>ВЕБ-РАЗРАБОТКА</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ДИЗАЙН</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>МОНТАЖ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ПОСТЕРЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>РИЛСЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ЛОГОТИПЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg></div></div>
+    <div class="marquee__band marquee__band--dark"><div class="marquee__track"><span>ЛОГОТИПЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>РИЛСЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ПОСТЕРЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>МОНТАЖ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ДИЗАЙН</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ВЕБ-РАЗРАБОТКА</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg></div><div class="marquee__track" aria-hidden="true"><span>ЛОГОТИПЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>РИЛСЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ПОСТЕРЫ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>МОНТАЖ</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ДИЗАЙН</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg><span>ВЕБ-РАЗРАБОТКА</span><svg class="marquee__icon" aria-hidden="true"><use href="#star20"/></svg></div></div>
+  </div>
+
+  <!-- ЭКРАН 3. Блок doors — три «двери» в разделы -->
+  <section class="doors container" id="what" aria-labelledby="what-title">
+    <div class="section-head">
+      <h2 class="section-head__title" id="what-title">Что я <span class="section-head__accent">делаю</span></h2>
+      <p class="section-head__note">Три направления, как разделители в каталоге. Каждое открывается отдельной страницей.</p>
+    </div>
+    <div class="doors__list">
+      <a class="doors__item door door--code reveal" href="code.html">
+        <span class="door__tab">✺ Программирование</span>
+        <span class="door__body">
+          <svg class="door__deco" aria-hidden="true"><use href="#star20"/></svg>
+          <h3 class="door__title">Разработка</h3>
+          <p class="door__text">Сайты и веб-приложения, от лендингов до продуктовых интерфейсов. Быстрые, адаптивные, с кодом, который легко развивать.</p>
+          <span class="door__chips chips"><span class="chip"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>React / Next.js</span><span class="chip"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>Вёрстка</span><span class="chip"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>API</span></span>
+          <span class="door__go"><span>5 сайтов</span><span class="door__arrow" aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a class="doors__item door door--design reveal" href="design.html">
+        <span class="door__tab">✺ Дизайн</span>
+        <span class="door__body">
+          <svg class="door__deco" aria-hidden="true"><use href="#star20"/></svg>
+          <h3 class="door__title">Дизайн</h3>
+          <p class="door__text">Постеры, афиши, логотипы, обложки и презентации. Интерфейсы от структуры экранов до финальной подачи.</p>
+          <span class="door__chips chips"><span class="chip chip--blue"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>Графика</span><span class="chip chip--blue"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>UI</span><span class="chip chip--blue"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>Figma</span></span>
+          <span class="door__go"><span>20 работ</span><span class="door__arrow" aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <a class="doors__item door door--edit reveal" href="editing.html">
+        <span class="door__tab">✺ Монтаж</span>
+        <span class="door__body">
+          <svg class="door__deco" aria-hidden="true"><use href="#star20"/></svg>
+          <h3 class="door__title">Монтаж</h3>
+          <p class="door__text">Снимаю и монтирую рилсы для кофейни и блогеров. Ритм, звук и темп, чтобы ролик досматривали до конца.</p>
+          <span class="door__chips chips"><span class="chip chip--ink"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>Reels</span><span class="chip chip--ink"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>Съёмка</span><span class="chip chip--ink"><svg class="chip__icon" aria-hidden="true"><use href="#star20"/></svg>Цвет</span></span>
+          <span class="door__go"><span>Проекты и ссылки</span><span class="door__arrow" aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 4. Блок featured — избранные работы -->
+  <section class="featured container" aria-labelledby="featured-title">
+    <div class="section-head">
+      <h2 class="section-head__title" id="featured-title">Избранные <span class="section-head__accent">работы</span></h2>
+      <p class="section-head__note">Несколько работ из каталога. Остальные — на странице «Дизайн».</p>
+    </div>
+    <div class="featured__grid">
+      <a class="featured__item reveal" href="design.html" data-cursor="в каталог">
+        <span class="featured__frame"><img class="featured__image" src="images/works/work-12.jpg" alt="Think Less" loading="lazy" decoding="async"></span>
+        <span class="featured__title">Think Less</span><span class="featured__type label">Постер</span>
+      </a>
+      <a class="featured__item reveal" href="design.html" data-cursor="в каталог">
+        <span class="featured__frame"><img class="featured__image" src="images/works/work-02.jpg" alt="Vladislava — «Сияй»" loading="lazy" decoding="async"></span>
+        <span class="featured__title">Vladislava — «Сияй»</span><span class="featured__type label">Обложка</span>
+      </a>
+      <a class="featured__item reveal" href="design.html" data-cursor="в каталог">
+        <span class="featured__frame"><img class="featured__image" src="images/works/work-18.jpg" alt="EPIK" loading="lazy" decoding="async"></span>
+        <span class="featured__title">EPIK</span><span class="featured__type label">Логотип</span>
+      </a>
+      <a class="featured__item reveal" href="design.html" data-cursor="в каталог">
+        <span class="featured__frame"><img class="featured__image" src="images/works/work-14.jpg" alt="Go Way" loading="lazy" decoding="async"></span>
+        <span class="featured__title">Go Way</span><span class="featured__type label">Постер</span>
+      </a>
+    </div>
+    <a class="featured__more button button--solid" href="design.html">Весь каталог →</a>
+  </section>
+
+  <!-- ЭКРАН 5. Блок process — как я работаю -->
+  <section class="process container" aria-labelledby="process-title">
+    <div class="section-head">
+      <h2 class="section-head__title" id="process-title">Как я <span class="section-head__accent">работаю</span></h2>
+      <p class="section-head__note">Сначала макет, потом код. Так проще договориться о результате до того, как начнётся разработка.</p>
+    </div>
+    <ol class="process__list">
+      <li class="process__step reveal"><span class="process__number">01</span><h3 class="process__title">Бриф и референсы</h3><p class="process__text">Выясняю задачу и аудиторию, собираю референсы и примеры, которые нравятся заказчику.</p></li>
+      <li class="process__step process__step--accent reveal"><span class="process__number">02</span><h3 class="process__title">Макет</h3><p class="process__text">Рисую макеты страниц. Главное на этом этапе — придумать дизайн, который цепляет с первых секунд.</p></li>
+      <li class="process__step reveal"><span class="process__number">03</span><h3 class="process__title">Вёрстка и код</h3><p class="process__text">Собираю сайт по макету: адаптив под телефон, анимации, понятная структура кода.</p></li>
+      <li class="process__step reveal"><span class="process__number">04</span><h3 class="process__title">Запуск и промо</h3><p class="process__text">Выкладываю сайт и, если нужно, снимаю и монтирую рилс, чтобы о проекте узнали.</p></li>
+    </ol>
+  </section>
+
+<!-- Блок contact (одинаковый на всех страницах) -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact__inner container">
+    <div>
+      <p class="eyebrow label">Контакты</p>
+      <h2 class="contact__title" id="contact-title">Есть проект? <span class="contact__accent">Давай обсудим.</span></h2>
+      <div class="contact__mail-row">
+        <a class="contact__mail" href="mailto:tanja.epowa@yandex.ru" id="mail">tanja.epowa@yandex.ru</a>
+        <button class="contact__copy" type="button" id="copyButton">Скопировать почту</button>
+      </div>
+      <div class="contact__socials socials">
+        <a class="socials__link" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer"><span class="socials__icon"><svg class="socials__svg" aria-hidden="true"><use href="#plane"/></svg></span>Telegram: @TanyaEpik</a>
+        <a class="socials__link" href="https://t.me/tatiankaepik" target="_blank" rel="noopener noreferrer"><span class="socials__icon"><svg class="socials__svg" aria-hidden="true"><use href="#plane"/></svg></span>Канал: @tatiankaepik</a>
+        <a class="socials__link" href="https://www.instagram.com/tanya.epova/" target="_blank" rel="noopener noreferrer"><span class="socials__icon"><svg class="socials__svg" aria-hidden="true"><use href="#ig"/></svg></span>Instagram: @tanya.epova</a>
+      </div>
+    </div>
+    <a class="contact__magnet magnet" id="magnet" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer" data-cursor="Telegram ↗">Напиши<br>в TG ↗</a>
+  </div>
+</section>
+</main>
+
+<!-- Блок footer -->
+<footer class="footer">
+  <div class="footer__inner container">
+    <span>Таня Эпик — creative developer</span>
+    <span class="footer__links">
+      <a class="footer__link" href="https://t.me/TanyaEpik" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a class="footer__link" href="https://t.me/tatiankaepik" target="_blank" rel="noopener noreferrer">Канал</a>
+      <a class="footer__link" href="https://www.instagram.com/tanya.epova/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a class="footer__link" href="#top">Наверх ↑</a>
+    </span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cursor-label" id="cursorLabel" aria-hidden="true"></div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>

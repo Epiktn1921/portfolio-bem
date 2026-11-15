@@ -1,0 +1,4 @@
+/* Блок works — галерея работ в несколько колонок. */
+.works{column-count:3;column-gap:20px;}
+@media (max-width:1000px){ .works{column-count:2;} }
+@media (max-width:440px){ .works{column-gap:12px;} }

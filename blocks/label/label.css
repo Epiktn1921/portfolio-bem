@@ -1,0 +1,2 @@
+/* Блок label — мелкая моноширинная подпись капслоком. */
+.label{font-family:var(--f-mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:500;}
